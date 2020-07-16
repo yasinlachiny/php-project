@@ -43,8 +43,8 @@ jobs:
         use_existing_version_if_available: "false"
         aws_access_key: ${{secrets.AWS_ACCESS_KEY}}
         aws_secret_key: ${{secrets.AWS_SECRET_KEY}}
-        application_name: z89
-        environment_name: Z89-env
+        application_name: APP-NAME
+        environment_name: ENV-NAME
         version_label: "${{ steps.timestamp.outputs.date}}"
         region: us-east-1
         deployment_package: package.zip
